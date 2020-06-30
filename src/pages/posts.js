@@ -4,8 +4,12 @@ import Hero from '../components/Hero'
 import { graphql } from 'gatsby'
 import Posts from '../components/Posts'
 // ...GatsbyImageSharpFluid
-const PostsPage = ({ data }) => {
-  return <h2>posts page</h2>
+const PostsPage = () => {
+  return (
+  <>
+    <Hero />
+  </>
+  )
 }
 
 export default PostsPage
