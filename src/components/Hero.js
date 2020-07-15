@@ -10,15 +10,22 @@ const query = graphql`
           ...GatsbyImageSharpFluid
         }
       }
+    },
+    shrimp_music: file(relativePath: {eq: "shrimp_music.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
   }
 `
 
 const Hero = ({ showPerson }) => {
-  const {person} = useStaticQuery(query)
+  const {shrimp_music} = useStaticQuery(query)
   return <header className="hero">
     {showPerson && (
-      <Image fluid={person.childImageSharp.fluid} className="hero-person" />
+      <Image fluid={shrimp_music.childImageSharp.fluid} className="hero-person" />
     )}
     
   </header>

@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <SocialLinks styleClass="footer-icons" />
       <p>
-        &copy;{new Date().getFullYear()} MDXBlog. All rights reserved
+        &copy;{new Date().getFullYear()} Shrimptastic. All rights reserved
       </p>
     </div>
   </footer>

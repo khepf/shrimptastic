@@ -1,5 +1,5 @@
 # GATSBY MDX BLOG
-
+- tinypng
 ## Project Setup
 
 1. Base - Gatsby Starter
