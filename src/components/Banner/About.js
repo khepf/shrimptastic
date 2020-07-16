@@ -13,16 +13,40 @@ const query = graphql`
           ...GatsbyImageSharpFixed
         }
       }
+    },
+    person2: file(relativePath: {eq: "falsetto-jaxxon.jpg"}) {
+      childImageSharp {
+        fixed (width: 100, height:100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    },
+    person3: file(relativePath: {eq: "mr-squawk.jpg"}) {
+      childImageSharp {
+        fixed (width: 100, height:100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
     }
   }
 `
 
+
 const About = () => {
   const data = useStaticQuery(query)
+
   return <Wrapper>
     <Title title="the band" />
     <Image fixed={data.person.childImageSharp.fixed} className="img" />
     <h4>Ludwig Van Kubrick</h4>
+    <p></p>
+
+    <Image fixed={data.person2.childImageSharp.fixed} className="img" />
+    <h4>Falsetto Jaxxon</h4>
+    <p></p>
+
+    <Image fixed={data.person3.childImageSharp.fixed} className="img" />
+    <h4>Mr. Squawk</h4>
     <p></p>
     <SocialLinks styleClass="banner-icons"/>
   </Wrapper>

@@ -4,8 +4,8 @@ const NewsLetter = () => {
   return <Layout>
     <section className="newsletter-page">
       <div className="page-center">
-        <h2>Get all the latest stories to your inbox</h2>
-        <h4>I write to my friends every few weeks</h4>
+        <h2>Get all the latest shrimp to your inbox</h2>
+        <h4>Shrimping is as shrimping does</h4>
         <form 
         className="contact-form"
         name="contact"
