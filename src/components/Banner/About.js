@@ -4,10 +4,28 @@ import Image from 'gatsby-image'
 import { graphql, useStaticQuery } from 'gatsby'
 import Title from './Title'
 import styled from 'styled-components'
-//...GatsbyImageSharpFixed
+
+const query = graphql`
+  {
+    person: file(relativePath: {eq: "ludwig-about.jpg"}) {
+      childImageSharp {
+        fixed (width: 100, height:100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
 
 const About = () => {
-  return <Wrapper>Banner About</Wrapper>
+  const data = useStaticQuery(query)
+  return <Wrapper>
+    <Title title="the band" />
+    <Image fixed={data.person.childImageSharp.fixed} className="img" />
+    <h4>Ludwig Van Kubrick</h4>
+    <p></p>
+    <SocialLinks styleClass="banner-icons"/>
+  </Wrapper>
 }
 
 const Wrapper = styled.div`
