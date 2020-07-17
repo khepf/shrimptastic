@@ -355,6 +355,7 @@ Hero
 }
 
 .hero {
+  display: flex;
   background: var(--clr-primary-10);
   height: 12rem;
   position: relative;
@@ -382,15 +383,27 @@ Hero
 @media screen and (min-width: 800px) {
   .hero {
     height: 25rem;
+    display: flex;
+    align-items: center;
   }
-  .hero-person {
+  .hero-shrimpmusic {
     width: 30rem;
     height: 20rem;
-    display: block;
-    position: absolute;
-    bottom: 0;
+    /* display: block; */
+    /* position: absolute; */
+    /* bottom: 0; */
     left: 40%;
-    transform: translate(-20%, 20%);
+    transform: translate(-20%, 10%);
+    z-index: 4;
+  }
+  .hero-sunny {
+    width: 10rem;
+    height: 10rem;
+    /* display: block; */
+    /* position: absolute; */
+    /* bottom: 0; */
+    left: 40%;
+    transform: translate(-10%, -10%);
     z-index: 4;
   }
 }
@@ -454,13 +467,13 @@ Banner Component
 Single Pages
 ===============
 */
-.newsletter-page,
+.contact-page,
 .success-page,
 .error-page {
   min-height: calc(100vh - 7rem);
   background: var(--clr-grey-10);
 }
-.newsletter-page,
+.contact-page,
 .success-page,
 .error-page {
   background: var(--clr-grey-10);
@@ -487,16 +500,16 @@ Single Pages
   margin-bottom: 2rem;
   padding: 0 2rem;
 }
-/* newsletter page */
-.newsletter-page {
+/* contact page */
+.contact-page {
   display: grid;
   place-items: center;
 }
-.newsletter-page h2 {
+.contact-page h2 {
   text-transform: initial;
   margin-bottom: 1rem;
 }
-.newsletter-page h4 {
+.contact-page h4 {
   text-transform: initial;
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);

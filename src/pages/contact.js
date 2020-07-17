@@ -1,8 +1,8 @@
 import React from 'react'
 import Layout from '../components/Layout'
-const NewsLetter = () => {
+const Contact = () => {
   return <Layout>
-    <section className="newsletter-page">
+    <section className="contact-page">
       <div className="page-center">
         <h2>Get all the latest shrimp to your inbox</h2>
         <h4>Shrimping is as shrimping does</h4>
@@ -35,4 +35,4 @@ const NewsLetter = () => {
   </Layout>
 }
 
-export default NewsLetter
+export default Contact

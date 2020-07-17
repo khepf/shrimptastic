@@ -24,18 +24,25 @@ const query = graphql`
           ...GatsbyImageSharpFluid
         }
       }
+    },
+    sunny: file(relativePath: {eq: "sunny-small.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
   }
 `
 
 const Hero = ({ showPerson }) => {
-  const {shrimp_music, shrimptastic} = useStaticQuery(query)
-  return <header className="hero">
-    {/* <Image fluid={shrimptastic.childImageSharp.fluid} className="hero-shrimptastic" /> */}
-    
+  const {shrimp_music, shrimptastic, sunny} = useStaticQuery(query)
+  return <header className="hero">  
     {showPerson && (
-   
-      <Image fluid={shrimp_music.childImageSharp.fluid} className="hero-person" />
+   <>
+      <Image fluid={shrimp_music.childImageSharp.fluid} className="hero-shrimpmusic" />
+      <Image fluid={sunny.childImageSharp.fluid} className="hero-sunny" />
+   </>
       
 
       
