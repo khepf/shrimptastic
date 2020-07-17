@@ -39,15 +39,15 @@ const About = () => {
     <Title title="the band" />
     <Image fixed={data.person.childImageSharp.fixed} className="img" />
     <h4>Ludwig Van Kubrick</h4>
-    <p></p>
+    <p><em>Words, Keys</em></p>
 
     <Image fixed={data.person2.childImageSharp.fixed} className="img" />
     <h4>Falsetto Jaxxon</h4>
-    <p></p>
+    <p><em>Strings, Riddles</em></p>
 
     <Image fixed={data.person3.childImageSharp.fixed} className="img" />
     <h4>Mr. Squawk</h4>
-    <p></p>
+    <p><em>The Bass</em></p>
     <SocialLinks styleClass="banner-icons"/>
   </Wrapper>
 }

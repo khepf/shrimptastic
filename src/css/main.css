@@ -377,6 +377,8 @@ Hero
 .hero-person {
   display: none;
 }
+
+
 @media screen and (min-width: 800px) {
   .hero {
     height: 25rem;
@@ -387,7 +389,7 @@ Hero
     display: block;
     position: absolute;
     bottom: 0;
-    left: 60%;
+    left: 40%;
     transform: translate(-20%, 20%);
     z-index: 4;
   }
