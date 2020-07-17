@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `ShrimpTastic`,
-    description: `ShrimpTastic music, art, videos, comics, for prawns and jumbo shrimp alike.`,
+    description: `Music, Art, Videos, Comics, and Puppets, for prawns and jumbo shrimp alike.`,
     titleTemplate: `%s | ShrimpTastic`,
     url: `https://shrimptastic.net/`,
     image: `mainImg2.png`,
