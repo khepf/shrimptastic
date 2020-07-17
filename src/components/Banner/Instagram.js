@@ -3,7 +3,6 @@ import Title from './Title'
 import Image from 'gatsby-image'
 import styled from 'styled-components'
 import { graphql, useStaticQuery } from 'gatsby'
-//...GatsbyImageSharpFluid
 
 const query = graphql`
   {
