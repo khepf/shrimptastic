@@ -10,6 +10,7 @@ const query = graphql`
     allMdx(sort: {fields: frontmatter___date, order: DESC}, limit: 5) {
       nodes {
         frontmatter {
+          author
           title
           date(formatString: "MMMM,Do,YYYY")
           slug
@@ -34,11 +35,12 @@ const Recent = () => {
   return <Wrapper>
     <Title title="recent" />
     {posts.map(post => {
-      const {title, slug, date, image: {childImageSharp: {fluid}}} = post.frontmatter
+      const {author, title, slug, date, image: {childImageSharp: {fluid}}} = post.frontmatter
       return <Link to={`/posts/${slug}`} key={post.id} className="post">
         <Image fluid={fluid} className="img"></Image>
         <div>
           <h5>{title}</h5>
+          <h5><em>{author}</em></h5>
           <p>{date}</p>
         </div>
       </Link>

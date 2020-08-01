@@ -8,7 +8,7 @@ import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 const PostTemplate = ({data}) => {
-  const {mdx:{frontmatter:{title, category, image, date}, body}} = data
+  const {mdx:{frontmatter:{title, author, category, image, date}, body}} = data
   return <Layout>
     <Hero />
     <Wrapper>
@@ -17,6 +17,8 @@ const PostTemplate = ({data}) => {
         <div className="post-info">
           <span>{category}</span>
           <h2>{title}</h2>
+          <h4><em>{author}</em></h4>
+
           <p>{date}</p>
           <div className="underline"></div>
         </div>
@@ -33,6 +35,7 @@ export const query = graphql`
 query GetSinglePost($slug: String) {
   mdx(frontmatter: {slug: {eq: $slug}}) {
     frontmatter {
+      author
       category
       date(formatString: "MMMM Do, YYYY")
       title
