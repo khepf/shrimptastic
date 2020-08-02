@@ -36,7 +36,7 @@ const query = graphql`
 `
 
 const Hero = ({ showPerson }) => {
-  const {shrimp_music, shrimptastic, sunny} = useStaticQuery(query)
+  const {shrimp_music, sunny} = useStaticQuery(query)
   return <header className="hero">  
     {showPerson && (
    <>

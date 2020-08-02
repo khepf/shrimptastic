@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Hero from '../components/Hero'
 import styled from 'styled-components'
 import Image from 'gatsby-image'
 import Banner from '../components/Banner'
@@ -10,7 +9,6 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 const PostTemplate = ({data}) => {
   const {mdx:{frontmatter:{title, author, category, image, date}, body}} = data
   return <Layout>
-    <Hero />
     <Wrapper>
       <article>
         <Image fluid={image.childImageSharp.fluid} />
@@ -57,6 +55,7 @@ const Wrapper = styled.section`
   width: 85vw;
   max-width: 1100px;
   margin: 0 auto;
+  margin-top: 6rem;
   margin-bottom: 4rem;
   .post-info {
     margin: 2rem 0 4rem 0;
