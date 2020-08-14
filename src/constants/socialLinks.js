@@ -1,7 +1,8 @@
 import React from "react"
 import {
   FaYoutubeSquare,
-  FaSpotify
+  FaSpotify,
+  FaTwitter
 } from "react-icons/fa"
 const SocialLinks = ({ styleClass }) => {
   return (
@@ -19,7 +20,15 @@ const SocialLinks = ({ styleClass }) => {
         target="_blank">
           <FaSpotify className="social-icon spotify-icon"></FaSpotify>
         </a>
-      </li>      
+      </li>
+      <li>
+        <a href="https://twitter.com/shrimping_music"
+        rel="noopener noreferrer" 
+        target="_blank">
+          <FaTwitter className="social-icon twitter-icon"></FaTwitter>
+        </a>
+      </li>
+            
     </ul>
   )
 }

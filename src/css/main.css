@@ -234,7 +234,10 @@ Navbar
   color: #ea4c89;
 }
 .spotify-icon {
-  color: #1DB954
+  color: #1DB954;
+}
+.twitter-icon {
+  color: #1DA1F2;
 }
 @media screen and (min-width: 800px) {
   .toggle-btn {
