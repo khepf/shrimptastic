@@ -20,7 +20,7 @@ export default function NewReleases(props) {
         style={{ marginBottom: 30}}
       />
       <ReactPlayer
-        url="https://www.youtube.com/watch?v=mj-x_osUTHE"
+        url="https://youtu.be/GxzVu0Y7la8"
         width="320"
         height="180"
         style={{ marginBottom: 30}}
