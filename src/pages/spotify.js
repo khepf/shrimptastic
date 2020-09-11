@@ -5,11 +5,13 @@ const Spotify = () => {
   return <Layout>
     <section className="success-page">
       <div className="page-center">
-        <h2>Welcome to Spotify Search Page</h2>
+        <h4>Shrimptastic</h4>
+        <h2>Trouble</h2>
+        <h4>AVAILABLE OCTOBER 15, 2020</h4>
         
-        <Link to="/" className="btn">
+        {/* <Link to="/" className="btn">
           back home
-        </Link>
+        </Link> */}
       </div>
     </section>
   </Layout>
