@@ -14,31 +14,31 @@ export default function NewReleases(props) {
       {/* new releases column */ }
       <article style={{ marginBottom: 30}}>
       <ReactPlayer
-        url="https://www.youtube.com/watch?v=T2ZepjQRyLs"
+        url="https://youtu.be/B9Qk99RD-IU"
         width="320"
         height="180"
         style={{ marginBottom: 30}}
       />
       <ReactPlayer
-        url="https://youtu.be/GxzVu0Y7la8"
+        url="https://youtu.be/QzGhbpYVGho"
         width="320"
         height="180"
         style={{ marginBottom: 30}}
       />
       <ReactPlayer
-        url="https://www.youtube.com/watch?v=n7AtiGoIBDk"
+        url="https://youtu.be/NdBhH8Jwll8"
         width="320"
         height="180"
         style={{ marginBottom: 30}}
       />
       <ReactPlayer
-        url="https://www.youtube.com/watch?v=9F5FECpvBi8"
+        url="https://youtu.be/5DKZ-hISBCA"
         width="320"
         height="180"
         style={{ marginBottom: 30}}
       />
       <ReactPlayer
-        url="https://www.youtube.com/watch?v=9pmgFnOIYH4"
+        url="https://youtu.be/aS9KAkNSQZY"
         width="320"
         height="180"
         style={{ marginBottom: 30}}
